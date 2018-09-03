@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { and } from 'airbnb-prop-types';
 
 export default and([
-  PropTypes.instanceOf(Set),
+  PropTypes.any,
   function modifiers(props, propName, ...rest) {
     const { [propName]: propValue } = props;
     let firstError;
